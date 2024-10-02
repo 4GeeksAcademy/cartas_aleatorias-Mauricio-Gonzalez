@@ -1,1 +1,40 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+.card .card-value {
+  font-size: 20px;
+}
+
+.card .card-suit {
+  font-size: 50px;
+  text-align: center;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.card-value.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-value.bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
